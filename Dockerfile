@@ -4,4 +4,4 @@ ADD . .
 
 RUN pip install --upgrade pip
 
-CMD ["python", "Tests/CalculatorTests.py"]
+CMD ["python", "Tests/test_CSVTests.py"]
