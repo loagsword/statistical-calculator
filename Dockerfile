@@ -1,7 +1,7 @@
 FROM python:3.7
 
-ADD . .
+COPY src /src
 
 RUN pip install --upgrade pip
 
-CMD ["python", "Tests/test_CSVTests.py"]
+CMD ["python", "-m", "unittest", "discover", "-s","src/Tests"]
