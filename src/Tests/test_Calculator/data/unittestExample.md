@@ -52,7 +52,7 @@ import HtmlTestRunner
 import xmlrunner
 
 # the .py file name is Calculator and the class name is also Calculator
-from Calculator import Calculator
+import Calculator
 
 # test data file path, the fils is a csv file.
 test_data_file_path = './test_data.csv'
