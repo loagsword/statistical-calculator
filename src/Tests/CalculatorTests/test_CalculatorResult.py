@@ -1,6 +1,6 @@
 import unittest
-from Calculator import Calculator
-from CsvReader import CsvReader
+from src.Calculator.Calculator import Calculator
+from src.CsvReader.csvReader import CsvReader
 
 
 class MyTestCase(unittest.TestCase):
@@ -15,6 +15,7 @@ class MyTestCase(unittest.TestCase):
     def test_results_property_calculator(self):
         self.calculator = Calculator()
         self.assertEqual(self.calculator.result, 0)
+
 
 if __name__ == '__main__':
     unittest.main()

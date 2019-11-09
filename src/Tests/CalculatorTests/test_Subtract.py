@@ -1,7 +1,7 @@
 import unittest
-from Calculator import Calculator
-from CsvReader import CsvReader
-from decimal import Decimal
+from src.Calculator.Calculator import Calculator
+from src.CsvReader.csvReader import CsvReader
+
 
 class MyTestCase(unittest.TestCase):
 
@@ -12,10 +12,10 @@ class MyTestCase(unittest.TestCase):
         if CsvReader.data is not None:
             CsvReader.data = []
 
-    def test_square_method_calculator(self):
-        self.test_data = CsvReader('src/td/square.csv').data
+    def test_subtract_method_calculator(self):
+        self.test_data = CsvReader('data/subtraction.csv').data
         for row in self.test_data:
-            self.assertEqual(self.calculator.square(row['Value 1']), Decimal(row['Result']))
+            self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
 
