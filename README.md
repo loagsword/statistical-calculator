@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/loagsword/statistical-calculator.svg?branch=master)](https://travis-ci.org/loagsword/statistical-calculator)
 # statistical-calculator
 A statistical-calculator. Project for IS 601851.
 ## Project Contributors: 
