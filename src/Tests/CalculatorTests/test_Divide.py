@@ -14,7 +14,7 @@ class MyTestCase(unittest.TestCase):
             CsvReader.data = []
 
     def test_divide_method_calculator(self):
-        self.test_data = CsvReader('data/division.csv').data
+        self.test_data = CsvReader('src/Tests/CalculatorTests/data/division.csv').data
         for row in self.test_data:
             self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), Decimal(row['Result']))
             self.assertEqual(self.calculator.divide('0', row['Value 2']), 'error, the divisor can not be zero')

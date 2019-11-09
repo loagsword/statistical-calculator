@@ -13,7 +13,7 @@ class MyTestCase(unittest.TestCase):
             CsvReader.data = []
 
     def test_square_method_calculator(self):
-        self.test_data = CsvReader('src/td/square.csv').data
+        self.test_data = CsvReader('src/Tests/CalculatorTests/data/square.csv').data
         for row in self.test_data:
             self.assertEqual(self.calculator.square(row['Value 1']), Decimal(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))

@@ -14,7 +14,7 @@ class MyTestCase(unittest.TestCase):
             CsvReader.data = []
 
     def test_multiply_method_calculator(self):
-        self.test_data = CsvReader('data/multiplication.csv').data
+        self.test_data = CsvReader('src/Tests/CalculatorTests/data/multiplication.csv').data
         for row in self.test_data:
             self.assertEqual(self.calculator.multiply(row['Value 1'], row['Value 2']), Decimal(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
