@@ -15,3 +15,9 @@ class Statistics(Calculator):
         self.result = mean(self.data)
         return self.result
 
+
+    def median(self):
+        self.result = mean(self.data)
+        return self.result
+
+ 
