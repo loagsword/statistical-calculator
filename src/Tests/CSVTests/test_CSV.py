@@ -1,5 +1,5 @@
 import unittest
-from src.CsvReader.csvReader import CsvReader as ReadCSV
+from src.CsvReader.CsvReader import CsvReader as ReadCSV
 from src.CsvReader.ClassFactory import class_factory
 
 

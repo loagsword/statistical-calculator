@@ -1,6 +1,6 @@
 import unittest
 from src.Calculator.Calculator import Calculator
-from src.CsvReader.csvReader import CsvReader
+from src.CsvReader.CsvReader import CsvReader
 from decimal import Decimal
 
 
