@@ -1,5 +1,5 @@
 import unittest
-import pprint
+
 
 from src.Statistics import Statistics
 
@@ -21,6 +21,6 @@ class StatisticsTests(unittest.TestCase):
         result = 3
         self.assertEqual(self.statistics.mean(data), result)
         self.assertEqual(self.statistics.data, result)
-        pprint(result)
+
         if __name__ == '__main__':
          unittest.main()
