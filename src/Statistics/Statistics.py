@@ -20,4 +20,22 @@ class Statistics(Calculator):
         self.result = mean(self.data)
         return self.result
 
- 
+    def populationvariance(self):
+        self.result = populationvariance(self.data)
+        return self.result
+
+    def zscore(self):
+        self.result = zscore(self.data)
+        return self.result
+
+    def confidenceinterval(self):
+        self.result = confidenceinterval(self.data)
+        return self.result
+
+    def standardizedscore(self):
+        self.result = standardizedscore(self.data)
+        return self.result
+
+    def populationcorrelation(self):
+         self.result = populationcorrelation(self.data)
+         return self.result
