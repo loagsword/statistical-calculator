@@ -11,6 +11,9 @@ class MyTestCase(unittest.TestCase):
         result = 3
         for row in self.test_data:
             self.assertEqual(self.statistics.mean(row), result)
+            self.assertEqual(self.statistics.result, int(result))
+            self.assertRaises(ZeroDivisionError, self.statistics.mean([]))
+            self.assertRaises(ValueError, self.statistics.mean(['one', 'two']))
 
 
 if __name__ == '__main__':
