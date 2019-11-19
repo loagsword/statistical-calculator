@@ -4,6 +4,7 @@ from src.Statistics.SampleMean import sample_mean
 from src.Statistics.SampleStandardDeviation import sample_std_deviation
 from src.Statistics.Proportion import get_proportion
 from src.Statistics.SampleVariance import sample_variance
+from src.Statistics.PValue import p_value
 
 
 class Statistics(Calculator):
@@ -27,4 +28,8 @@ class Statistics(Calculator):
 
     def sample_variance(self, sample):
         self.result = sample_variance(sample)
+        return self.result
+
+    def p_value(self, event_occurrence, sample_size):
+        self.result = p_value(event_occurrence, sample_size)
         return self.result
