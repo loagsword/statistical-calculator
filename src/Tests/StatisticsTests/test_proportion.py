@@ -5,7 +5,7 @@ from src.CsvReader.csvReader import CsvReader
 
 class MyTestCase(unittest.TestCase):
 
-    def test_mean_calculator(self):
+    def test_proportion_calculator(self):
         self.statistics = Statistics()
         self.test_data = CsvReader('src/Tests/StatisticsTests/data/proportion.csv').data
 
