@@ -5,6 +5,10 @@ from src.CsvReader.csvReader import CsvReader
 
 class MyTestCase(unittest.TestCase):
 
+    def tearDown(self):
+        if CsvReader.data is not None:
+            CsvReader.data = []
+
     def test_p_value_calculator(self):
         self.statistics = Statistics()
         self.test_data = CsvReader('src/Tests/StatisticsTests/data/p_value.csv').data
