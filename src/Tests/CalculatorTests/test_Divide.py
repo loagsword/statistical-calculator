@@ -17,8 +17,7 @@ class MyTestCase(unittest.TestCase):
         self.test_data = CsvReader('src/Tests/CalculatorTests/data/division.csv').data
         for row in self.test_data:
             self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), float(row['Result']))
-            # self.assertEqual(self.calculator.divide('0', row['Value 2']), None)
-          #  self.assertRaises(ZeroDivisionError, self.calculator.divide('0', row['Value 2']), msg="Error: Can't Divide by 0")
+            self.assertRaises(ZeroDivisionError, self.calculator.divide('0', row['Value 2']))
 
 
 if __name__ == '__main__':
