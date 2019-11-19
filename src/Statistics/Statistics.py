@@ -2,6 +2,7 @@ from src.Calculator.Calculator import Calculator
 from src.Statistics.Mean import mean
 from src.Statistics.SampleMean import sample_mean
 from src.Statistics.SampleStandardDeviation import sample_std_deviation
+from src.Statistics.Proportion import get_proportion
 
 
 class Statistics(Calculator):
@@ -17,4 +18,8 @@ class Statistics(Calculator):
 
     def sample_std_deviation(self, sample):
         self.result = sample_std_deviation(sample)
+        return self.result
+
+    def get_proportion(self, sample_size, no_outcomes):
+        self.result = get_proportion(sample_size, no_outcomes)
         return self.result
