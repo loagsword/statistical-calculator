@@ -1,6 +1,6 @@
 import unittest
 from src.Statistics.Statistics import Statistics
-from src.CsvReader.csvReader import CsvReader
+from src.CsvReader.CsvReader import CsvReader
 
 
 class MyTestCase(unittest.TestCase):
