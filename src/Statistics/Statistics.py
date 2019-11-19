@@ -7,6 +7,8 @@ from src.Statistics.SampleVariance import sample_variance
 from src.Statistics.PValue import p_value
 
 
+from src.CsvReader.CsvReader import CsvReader
+
 class Statistics(Calculator):
     result = 0
 
@@ -33,3 +35,27 @@ class Statistics(Calculator):
     def p_value(self, event_occurrence, sample_size):
         self.result = p_value(event_occurrence, sample_size)
         return self.result
+
+    def median(self):
+        self.result = mean(self.data)
+        return self.result
+
+    def populationvariance(self):
+        self.result = populationvariance(self.data)
+        return self.result
+
+    def zscore(self):
+        self.result = zscore(self.data)
+        return self.result
+
+    def confidenceinterval(self):
+        self.result = confidenceinterval(self.data)
+        return self.result
+
+    def standardizedscore(self):
+        self.result = standardizedscore(self.data)
+        return self.result
+
+    def populationcorrelation(self):
+         self.result = populationcorrelation(self.data)
+         return self.result

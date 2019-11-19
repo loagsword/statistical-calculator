@@ -2,7 +2,6 @@ import csv
 from src.CsvReader.ClassFactory import class_factory
 from src.Fileutilities.absolute_path import absolute_path
 
-
 class CsvReader:
     data = []
     objects = []

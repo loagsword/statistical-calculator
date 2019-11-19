@@ -1,5 +1,3 @@
-
-
 # Calculates the mean of a list
 def mean(data_list):
     try:
@@ -13,4 +11,5 @@ def mean(data_list):
         print("Error: Can't Divide by 0")
     except ValueError:
         print("Error: Check your data inputs")
+
 
